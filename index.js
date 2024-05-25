@@ -4,7 +4,7 @@ import ip from 'ip';
 const app = express();
 const ipAddress = ip.address();
 
-const port = 3030
+const port = 80
 
 app.get('/', (req, res) => {
   res.send(`<h1>Dummy Express listing on ${ipAddress}</h1>`)
